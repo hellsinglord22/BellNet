@@ -1,0 +1,212 @@
+.navbar{
+    width: 100px;
+    height:100%;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 9999;
+
+}
+
+.navbar-register{
+	width: 0px;
+	background-color: #181B21;
+	border-radius: 0px 5px 5px 0px;
+	top: 20%;
+	display: block;
+	position: fixed;
+	overflow: hidden;
+	z-index: 3;
+
+	-webkit-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    -moz-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    -ms-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    -o-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+}
+
+.navbar-register img{
+	width: 100px;
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+.navbar-register input[type="text"], .navbar-register input[type="password"]{
+	width: 90%;
+    margin: 5px auto;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #00746b;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+}
+
+.navbar-register input[type="submit"]{
+	width: 90%;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	color:#fff;
+	margin:0px auto 5px auto;
+	border-radius: 5px;
+	outline: 0;
+	background-color: #1E292F;
+	opacity:0.7;
+	cursor: pointer;
+	display: block;
+}
+
+.navbar-register button{
+	width: 90%;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	color:#fff;
+	margin:0px auto 15px auto;
+	border-radius: 5px;
+	outline: 0;
+	background-color: #e84837;
+	opacity:0.7;
+	cursor: pointer;
+	display: block;
+
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.navbar-register button:hover{
+	background-color: red;
+}
+
+.navbar-register input[type="submit"]:hover{
+	background-color: #0E1417;
+}
+
+select {  
+    width: 90%;
+    margin: 5px auto;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #00746b;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+}
+
+.navbar-login{
+	width: 0px;
+	background-color: #181B21;
+	border-radius: 0px 5px 5px 0px;
+	top: 20%;
+	display: block;
+	position: fixed;
+	overflow: hidden;
+	z-index: 3;
+
+	-webkit-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    -moz-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    -ms-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    -o-transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+    transition: all .3s cubic-bezier(0.585,-.6,.43,1.65);
+}
+
+.navbar-login img{
+	width: 100px;
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+.navbar-login input[type="text"], .navbar-login input[type="password"]{
+	width: 90%;
+    margin: 5px auto;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #00746b;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+}
+
+.navbar-login input[type="submit"]{
+	width: 90%;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	color:#fff;
+	margin:0px auto 5px auto;
+	border-radius: 5px;
+	outline: 0;
+	background-color: #1E292F;
+	opacity:0.7;
+	cursor: pointer;
+	display: block;
+}
+
+.navbar-login button{
+	width: 90%;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	color:#fff;
+	margin:0px auto 15px auto;
+	border-radius: 5px;
+	outline: 0;
+	background-color: #e84837;
+	opacity:0.7;
+	cursor: pointer;
+	display: block;
+
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.navbar-login button:hover{
+	background-color: red;
+}
+
+.navbar-login input[type="submit"]:hover{
+	background-color: #0E1417;
+}
+
+.navbar-menu{
+	position: absolute;
+	top:40%;
+	overflow: hidden;
+}
+
+.navbar-item{
+	display: block;
+	width: 100px;
+	height: 50px;
+	background-color: #2D3E48;
+	margin-bottom: 10px;
+	line-height: 50px;
+	font-size: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 0px 5px 5px 0px;
+	text-align: center;
+
+}
+
+.navbar-item:hover{
+	background-color: #57636B;
+}
+
+.navbar-active{
+	background-color: #fff !important;
+	border-left: solid 5px #505050;
+}
+
+.navbar-item a{
+	text-decoration: none;
+	color: #fff;
+}
