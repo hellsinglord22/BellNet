@@ -11,17 +11,21 @@ $("document").ready(function(){
     
     // Add listeners 
     $("#eraserTool").click(function(){
-       alert("I like it when you touch me there");
        currentTool = ERASER; 
+       $(".item").css("background-color", "white"); 
+       $(this).css("background-color", "#bbb"); 
+       
     });
     
      $("#typeTool").click(function(){
-       alert("I like it when you touch me there");
        currentTool = TYPE; 
+       $(".item").css("background-color", "white"); 
+       $(this).css("background-color", "#bbb"); 
     });
     
      $("#brushTool").click(function(){
-       alert("I like it when you touch me there");
-       currentTool = BRUSH; 
+       currentTool = BRUSH;
+       $(".item").css("background-color", "white"); 
+       $(this).css("background-color", "#bbb"); 
     });
 }); 
