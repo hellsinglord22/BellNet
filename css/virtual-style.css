@@ -256,13 +256,15 @@ html,body{
 }
 
 .middle-area .board{
-	width: 99%;
-	height:89%;
 	border: 1px solid #ccc;
 	margin-top: 5px;
 	box-sizing: border-box;
 	border-radius: 5px;
+	position: absolute;
 }
+
+
+
 .middle-area .top-part .midtopbtn{
 	background: #ffffff;
 	background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);

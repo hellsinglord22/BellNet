@@ -76,11 +76,11 @@
 				<div class="left-area">
 					<div class="items">
 
-							<div class="item">
+							<div class="item" id="moveTool">
 								<img title="Move Tool" src="imgs/cursor.png" alt="">
 							</div>
 
-							<div class="item">
+							<div class="item" id="selectTool">
 								<img title="Select Tool" src="imgs/arrow.png" alt="">
 							</div>
 
@@ -88,7 +88,7 @@
 								<img title="Eraser Tool" src="imgs/eraser.png" alt="">
 							</div>
 
-							<div class="item">
+							<div class="item" id="shapesTool">
 								<img title="Shapes Tool" src="imgs/shapes.png" alt="">
 							</div>
 
@@ -96,7 +96,7 @@
 								<img title="Brush Tool" src="imgs/brush.png" alt="">
 							</div>
 
-							<div class="item">
+							<div class="item" id="gridTool">
 								<img title=" Grid Tool" src="imgs/grid.png" alt="">
 							</div>
 
@@ -104,19 +104,19 @@
 								<img title="Type Tool" src="imgs/typetool.png" alt="">
 							</div>
 
-							<div class="item">
+							<div class="item" id="highlighterTool">
 								<img title="Highlighter Tool" src="imgs/highlighter.png" alt="">
 							</div> 
 
-							<div class="item">
+							<div class="item" id="wolframeTool">
 								<img title="wolframe Tool" src="imgs/wolframe.png" alt="">
 							</div>
 
-							<div class="item">
+							<div class="item" id="clearallTool">
 								<img title=" Clearall Tool" src="imgs/clearall.png" alt="">
 							</div>
 
-							<div class="item">
+							<div class="item" id="logoutTool">
 								<img title="Logout" src="imgs/logout.png" alt="">
 							</div>
 
@@ -124,16 +124,8 @@
 				</div>
 
 				<div class="middle-area">
-					<div class="top-part">
-						<span>
-							<button class="midtopbtn">Title for the Window</button>
-							<button class="midtopbtn2">+</button>
-						</span>
-
-						<button class="midtopbtn3">x</button>
-					</div>
-					<canvas class="board" id="whiteBoard">
-						
+					
+					<canvas class="board" id="whiteBoard" width="970" height="500">
 					</canvas>
 				</div>
 			</div>
@@ -213,5 +205,6 @@
 
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="js/virtual-script.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
 	</body>
 </html>
