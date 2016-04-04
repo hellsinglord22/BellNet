@@ -2,16 +2,50 @@
 
 // Attributes 
 var currentTool; 
-var isDrawing;
 
-var whiteBoard = document.getElementById("whiteBoard"); 
-var brush = whiteBoard.getContext("2d");
-brush.strokeStyle="black"; 
+var whiteBoard = new fabric.Canvas("whiteBoard"); 
+ 
 
 
 
-var radius = 10; 
 
+
+function brushTool()
+{
+    whiteBoard.isDrawingMode = true; 
+}
+
+function moveTool(){
+    whiteBoard.isDrawingMode = false; 
+}
+
+
+
+
+/**
+ * description
+ *
+ */
+function changeBehaviour()
+{
+    switch (currentTool) {
+        case "brushTool":
+            brushTool();
+            break;
+        
+        case "moveTool": 
+            moveTool(); 
+            break;
+            
+        case "clearallTool":
+            $(".item").css("background-color", "white"); 
+            whiteBoard.clear();
+            break; 
+        
+        default:
+            brushTool();
+    }
+}
 
 
 /**
@@ -22,33 +56,10 @@ function selectTool()
     currentTool = this.id; 
     $(".item").css("background-color", "white"); 
     $("#".concat(currentTool)).css("background-color", "#bbb"); 
-}
-
-/**
- * get mousePosition in respective to the canves not the document
- * @param canvas you want to get the mouse x, y position on it. 
- * @param evt mouse evt position relative to the document when event occure 
- */
-function getMousePos(canvas, evt) 
-{
-    var rect = canvas.getBoundingClientRect();
-        return {
-            x: evt.clientX - rect.left,
-            y: evt.clientY - rect.top
-        };
+    changeBehaviour();
 }
 
 
-
-function onmousedownBrush(e)
-{
-        e.preventDefault();
-        isDrawing = true;
-        
-        var mousePos = getMousePos(whiteBoard, e); 
-        
-        brush.moveTo(mousePos.x, mousePos.y);
-}
 
 //==============================================================================
 // ADD EVENT LISTENER 
@@ -59,25 +70,6 @@ function initEventListener()
 {
     // Add listeners 
     $(".item").click(selectTool);
-    
-    
-    whiteBoard.onmousedown = onmousedownBrush; 
-    
-    whiteBoard.onmousemove = function(e) 
-    {
-        var mousePos = getMousePos(whiteBoard, e); 
-    
-        if (isDrawing) 
-        {
-            brush.lineTo(mousePos.x, mousePos.y);
-            brush.stroke();
-      }
-    };
-    
-    whiteBoard.onmouseup = function() {
-        isDrawing = false;
-    };
-    
 }
 
 
