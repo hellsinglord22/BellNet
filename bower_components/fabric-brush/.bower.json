@@ -1,0 +1,45 @@
+{
+  "name": "fabric-brush",
+  "authors": [
+    "Tennison Chan <tennison.chan+fabric-brush@gmail.com>"
+  ],
+  "description": "A variety of brushes based on an awesome HTML5 canvas framework fabric.js",
+  "license": "MIT",
+  "homepage": "https://tennisonchan.github.com/fabric-brush",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "fabric",
+    "fabric.js",
+    "brush",
+    "brushes",
+    "canvas",
+    "HTML5",
+    "drawing",
+    "spray",
+    "stroke",
+    "crayon",
+    "marker",
+    "ink",
+    "drip",
+    "graffiti"
+  ],
+  "dependencies": {
+    "fabric.js": "fabric#^1.5.0"
+  },
+  "_release": "1dc2291269",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1dc2291269292192ef53d8c5909dae221af1af4f"
+  },
+  "_source": "https://github.com/tennisonchan/fabric-brush.git",
+  "_target": "*",
+  "_originalSource": "fabric-brush",
+  "_direct": true
+}

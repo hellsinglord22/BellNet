@@ -25,6 +25,17 @@ html,body{
 	font-family: RobotoL;
 }
 
+#open{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	background: url(../imgs/load.gif) 50% 50% no-repeat rgb(249,249,249);
+	background-size: 45%;
+
+}
 /* ************************************************** SCROLL-BAR */
 ::-webkit-scrollbar { 
 	width: 2px; 
@@ -162,8 +173,8 @@ html,body{
 }
 
 .top-area .logo{
-	width: 80px;
-	margin:0px 20px 0px 5px;
+	width: 100px;
+	margin:0px 30px 0px 10px;
 	float: left;
 }
 
@@ -256,15 +267,13 @@ html,body{
 }
 
 .middle-area .board{
+	width: 99%;
+	height:89%;
 	border: 1px solid #ccc;
 	margin-top: 5px;
 	box-sizing: border-box;
 	border-radius: 5px;
-	position: absolute;
 }
-
-
-
 .middle-area .top-part .midtopbtn{
 	background: #ffffff;
 	background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
@@ -387,6 +396,7 @@ html,body{
 	border:1px solid #ccc;
 	padding: 5px 0px;
 	color:#000;
+	overflow:hidden;
 }
 
 .right-side .part2 .title{
@@ -431,11 +441,11 @@ html,body{
 
 .right-side .part3{
 	margin:10px 0px 0px 10px;
-	color: #fff;
 	border-radius: 5px 0px 0px 5px;
 	border:1px solid #ccc;
 	padding: 5px 0px;
 	color:#000;
+	overflow:hidden;
 }
 
 .right-side .part3 .title{
@@ -479,6 +489,7 @@ html,body{
 	border:1px solid #ccc;
 	padding: 5px 0px;
 	color:#000;
+	overflow:hidden;
 }
 
 .right-side .part4 .title{
@@ -506,14 +517,12 @@ html,body{
 
 }
 
-.right-side .part4 span{
-	padding-left: 10px;
-}
 .right-side .part4 input{
-border-radius: 5px;
-    width: 215px;
+	border-radius: 5px;
+	width: 215px;
+	margin: 0px 8px;
 }
-.right-side .part4 button{
+.right-side .part4 #send{
 	background: #3498db;
 	background-image: -webkit-linear-gradient(top, #3498db, #0f76a6);
 	background-image: -moz-linear-gradient(top, #3498db, #0f76a6);
@@ -531,10 +540,27 @@ border-radius: 5px;
 	font-size: 1em;
     padding: 6px;
 }
-.right-side .part4 button:hover{
+.right-side .part4 #send:hover{
 	background: #3cb0fd;
 	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-	}
+}
+
+.right-side .part4 #min4{
+	float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0px 5px;
+    border: 2px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    background-color: #DDD;
+}
+.right-side .part4 img{
+	width:30px;
+	vertical-align: middle;
+}

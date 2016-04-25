@@ -1,23 +1,20 @@
-var whiteBoard = document.getElementById("whiteBoard"); 
-var brush = whiteBoard.getContext("2d"); 
-var isDrawing; 
+var canvas = new fabric.Canvas('whiteBoard');
 
 
+canvas.isDrawingMode = true; 
 
-$("document").ready(function(){
-    
-    whiteBoard.onmousedown = function(e) {
-    isDrawing = true;
-      brush.moveTo(e.clientX, e.clientY);
-    };
-    
-    whiteBoard.onmousemove = function(e) {
-      if (isDrawing) {
-        brush.lineTo(e.clientX, e.clientY);
-        brush.stroke();
-      }
-    };
-    whiteBoard.onmouseup = function() {
-      isDrawing = false;
-    };
-}); 
+// Crayon Brush
+canvas.freeDrawingBrush = new fabric.CrayonBrush(canvas, {
+  width: 70,
+  opacity: 0.6,
+  color: "#ff0000"
+});
+
+// Ink Brush
+// canvas.freeDrawingBrush = new fabric.InkBrush(canvas);
+
+// Marker Brush
+// canvas.freeDrawingBrush = new fabric.MarkerBrush(canvas);
+
+// Spray Brush
+// canvas.freeDrawingBrush = new fabric.SprayBrush(canvas);

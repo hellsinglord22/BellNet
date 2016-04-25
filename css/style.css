@@ -22,6 +22,7 @@ html,body{
 	width:100%;
 	height:100%;
 	font-family: RobotoL;
+	overflow-x: hidden;
 }
 
 .main-body{
@@ -30,6 +31,18 @@ html,body{
 	width: inherit;
 	height: auto;
 	background-color: rgba(0,0,0,0.8);
+}
+
+#open{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	background: url(../imgs/load.gif) 50% 50% no-repeat rgb(249,249,249);
+	background-size: 45%;
+
 }
 
 /* ************************************************** SCROLL-BAR */
@@ -166,6 +179,36 @@ html,body{
 }
 
 /* ************************************************** HEADER */
+.virtual-button {
+	display:inline-block;
+	width:100%;
+}
+.virtual-button a{
+	text-decoration:none;
+
+}
+
+.virtual-button p{
+	display:block;
+	width:200px;
+	color: #fff;
+    background-color: rgba(232,72,55,0.6);
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor:pointer;
+    text-align:center;
+
+    transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-ms-transition:all 0.4s;
+	-o-transition:all 0.4s;
+}
+
+.virtual-button p:hover{
+	background-color: rgb(232,72,55);
+}
 
 .login{
 	position: fixed;
@@ -196,7 +239,6 @@ html,body{
 	width:100px;
 	padding-bottom: 5px;
 	font-family: RobotoL;
-	
 }
 
 .header ul img{
@@ -258,7 +300,7 @@ html,body{
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	margin: 80px auto 0px auto;
+	margin: 60px auto 0px auto;
 	cursor: pointer;
 
 	position: relative;
@@ -307,6 +349,7 @@ html,body{
 	text-align: center;
 	margin-bottom: 60px;
 	letter-spacing:7px;
+	text-transform:uppercase;
 }
 
 .about h2{
@@ -450,12 +493,14 @@ html,body{
 .courses p{
 	text-align:center;
 	letter-spacing:7px;
+	text-transform:uppercase;
 }
 
 .courses .items{
 	width: 800px;
 	display: block;
 	margin:0px auto;
+	cursor:pointer;
 }
 
 .courses .item{
@@ -481,6 +526,11 @@ html,body{
 	-moz-transition: all 0.6s;
 	-ms-transition: all 0.6s;
 	-o-transition: all 0.6s;
+}
+
+.courses .item .flipper-front h1 {
+	padding-bottom:6px;
+
 }
 
 .courses .item .flipper-back{
@@ -550,6 +600,7 @@ html,body{
 	text-align: center;
 	margin-bottom: 60px;
 	letter-spacing:7px;
+	text-transform:uppercase;
 }
 
 .tools .item img{
@@ -768,16 +819,27 @@ html,body{
 .header2{
 	font-family: RobotoL;
 	width: 100%;
-	height:auto;
-	padding-bottom: 86px;
-	background-color:#262f38;
+	height: auto;
+	padding-bottom: 20px;
+	background-image: url(../imgs/bg_header.png);
+	background-color: #262f38;
+	margin-bottom: -10px;
+
+}
+
+.top_divider{
+	margin-bottom:30px;
+}
+
+.top_divider img{
+	max-width:135%;
 }
 
 .header2 ul{
 	width: 100%;
 	text-align: center;
 	padding-top: 20px;
-
+	margin-bottom: 50px;
 }
 
 .header2 ul li {
@@ -806,21 +868,18 @@ html,body{
 	border-bottom: none !important; 
 }
 
-.below-menu{
-	width: inherit;
-	text-align:center;
-	height: auto;
-	background-color:#E74837;
-	padding:10px 0px 10px 0px;
+.header2 input[type="text"]{
+    border: 2px solid #aaa;
+    outline: 0;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
-.below-menu span{
-	color:rgba(0,0,0,0.8);
-
-}
-
-.below-menu .subitems{
-	color:#262F38;
+.header2 input[type="text"]:focus{
+	border: 2px solid #e84837;
 }
 
 .leftpart{
@@ -851,21 +910,42 @@ html,body{
 }
 
 .userinfo .profile-pic{
+	height:100px;
+	width:100px;
+	background-color:#eee;
+	background-image:url(../imgs/user.png);
+	background-size:80%;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	margin:20px auto 20px auto;
 	border-radius:100%;
-	border:2px solid #fbfbfc;
-	background-color: #D0CFCF;
-	margin: 8px 0px 8px 0px;
-	overflow:hidden;
-	box-shadow: inset 0 0 0 1px #e0e5e9;
-	width:50%;
-	height:inherit;
-	display: inline-block;
-
-}
-.userinfo .profile-pic img{
-	float:right;
 	cursor:pointer;
 }
+
+.userinfo p:hover{
+	opacity:1;
+}
+
+.userinfo p{
+	opacity:0;
+	width:100px;
+	height:100px;
+	display:block;
+	color:#fff;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size:20px;
+	font-weight:bold;
+	text-align: center;
+	line-height:100px;
+	border-radius:100%;
+
+	transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-ms-transition:all 0.4s;
+	-o-transition:all 0.4s;
+}
+
 .instructor-option{
 	padding: 15px 25px 15px 25px;
     box-shadow: inset 0 0 0 1px #e0e5e9;
@@ -878,6 +958,7 @@ html,body{
     line-height: 20px;
     background-color:#fff;
 }
+
 .instructor-option p{
     padding-left: 3px;	
 	font-size:2em;
@@ -897,25 +978,122 @@ html,body{
 	color:#333;
 	
 }
+
 .instructor-option ul li{
-	padding-bottom: 15px;
+	color: #E74737;
+	margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.instructor-active{
+	background-color: #E74737;
+    color: #fff !important;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 
 .instructor-option span{
-	color:#E74837;
     font-size:1.3em;
     padding-right:8px;
 }
 .instructor-option a{
 	text-decoration:none;
 }
+.innercontent{
+	margin: 15px 0px 5px 6px;
+}
+
+
+/* *********************************** course-item */
+.course-area h1{
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.course-item{
+	border:1px solid #eee;
+	border-radius:8px;
+	overflow:hidden;
+	margin-bottom:40px;
+}
+
+.course-item img{
+	display:block;
+}
+
+.course-category{
+    background: #f8f8f8;
+    padding: 7px 7px 5px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    color:#337ab7;
+}
+
+.course-title{
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding:10px;
+}
+
+.course-desc{
+	font-size: 13px;
+    line-height: 18px;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.course-author{
+	font-size: 13px;
+    line-height: 18px;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.course-author a{
+	text-decoration:none;
+	color:#337ab7;
+	text-transform: uppercase;
+}
+
+.cource-price{
+    margin: 10px 0px 0px 0px;
+    padding: 0px 5px 10px 0px;
+    font-weight: 700;
+    color: #468847;
+    font-size: 16px;
+    direction: rtl;
+    border-bottom: 2px solid #bbb;
+}
+
+.bottom{
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.bottom span i{
+	font-style:normal;
+	font-family:RobotoL;
+}
+
+
+
+
+
+/* *********************************** footer2  */
 .footer2{
 	background-color:#262f38;
 	color: #C7C7C7;
 }
 .footer2 .leftpart h4{
-	padding-bottom:16px;
+	padding-bottom: 4px;
 }
 .footer2 .leftpart .s1{
 	border: 2px solid #fff;
@@ -937,7 +1115,7 @@ html,body{
 }
 
 .footer2 .leftpart hr{
-	border: 1px solid rgba(113, 118, 122, 0.38);
+	border: 1px solid rgba(106, 107, 107, 0.16);
 	width: 96%;
 }
 .footer2 .leftpart .s2{
@@ -954,7 +1132,44 @@ html,body{
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 }
+.footer2 .social h4{
+	padding-bottom:16px;
+}
+.footer2 .social{
+	text-align: center;
+}
+
+.footer2 .social span{
+	margin: 5px 20px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.footer2 .social span:hover{
+	background-color: #fff;
+	color: #1B1717;
+}
+
 .footer2 hr{
-	border: 1px solid rgba(113, 118, 122, 0.38);
-	width: 84%;
+	border: 1px solid rgba(106, 107, 107, 0.16);
+	width: 96%;	
+}
+
+.footer2 p{
+	padding:10px 0px;
+	text-align:center;
+	color:#fff;
 }

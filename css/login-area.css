@@ -1,0 +1,51 @@
+.login-area{
+	width: 0px;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 9999;
+    color: #fff;
+
+    transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-ms-transition:all 0.4s;
+	-o-transition:all 0.4s;
+}
+
+.login-area .holder{
+	position:absolute;
+	top:5%;
+}
+
+.login-area p{
+    display: block;
+    background-color: #2D3E48;
+    float: left;
+    width: 120px;
+    height: 33px;
+    padding: 10px 10px;
+    line-height: 35px;
+    vertical-align: middle;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.login-area a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.profile{
+    height: 50px;
+    width: 50px;
+    background-image: url(../imgs/girl.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    position: relative;
+    left: 100px;
+    top: -3px;
+    vertical-align: middle;
+    border: 5px solid #2D3E48;
+}

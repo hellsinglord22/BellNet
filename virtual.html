@@ -28,14 +28,6 @@
 							</div>
 
 							<div class="item">
-								<img title="full screen" src="imgs/fullscreen.png" alt="">
-							</div>&nbsp; &nbsp;
-
-							<div class="item">
-								<img title="Setting" src="imgs/setting.png" alt="">
-							</div>&nbsp; &nbsp;
-
-							<div class="item">
 								<img title="Undo" src="imgs/undo.png" alt="">
 							</div>
 
@@ -47,20 +39,16 @@
 								<img title="Gallery" src="imgs/imgicon.png" alt="">
 							</div>&nbsp; &nbsp; 
 
-							<div class="item">
-								<span><img title="Color" src="imgs/paintbucket.png" alt=""></span><span></span>
+							<div class="item" id="colorTool">
+								<input type="color" value="#005E7A" id="drawingColor"><span></span>
 							</div>
 
 							<div class="item">
-								<img title=" Pen Color" src="imgs/pencil.png" alt="">
-							</div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+								<input type="range" min="12" max="42" id="slider">
+							</div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
 
 							<div class="item">
-								<img title="Open Presentation" src="imgs/presentation.png" alt="">
-							</div>
-
-							<div class="item">
-								<img title="Share File" src="imgs/share.png" alt="">
+								<img title="Share File" src="imgs/shareFile.png" alt="">
 							</div>
 
 							<div class="item">
@@ -68,7 +56,7 @@
 							</div>
 
 							<div class="item">
-								<img title="breakroom" src="imgs/breakroom.png" alt="">
+								<img title="Share Screen" src="imgs/shareScreen.png" alt="">
 							</div>
 
 							
@@ -97,8 +85,8 @@
 								<img title="Brush Tool" src="imgs/brush.png" alt="">
 							</div>
 
-							<div class="item" id="gridTool">
-								<img title=" Grid Tool" src="imgs/grid.png" alt="">
+							<div class="item" id="penTool">
+								<img title="pen" src="imgs/pen.png" alt="">
 							</div>
 
 							<div class="item" id="typeTool">
@@ -196,12 +184,14 @@
 				</span><br><br>
 				<div class="chat">
 				</div>
-				<span><input type="text" name="lname" placeholder="  Text......"></span><span><button>Send</button></span>
+				<span><input type="text" name="lname" id="message" placeholder="  Text......"></span><span><button>Send</button></span>
 				
 		</section>
 
+		
+		<script type="text/javascript" src="bower_components/fabric.js/dist/fabric.min.js"></script>
+		<script type="text/javascript" src="bower_components/fabric-brush/dist/fabric-brush.min.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
 		<script type="text/javascript" src="js/virtual-script.js"></script>
 		
 	</body>
