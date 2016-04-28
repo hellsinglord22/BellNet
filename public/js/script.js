@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	itemHover(".courses .items #a1");
 	itemHover(".courses .items #a2");
 	itemHover(".courses .items #a3");
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 	function itemHover(class1){
 
-		$(class1).hover(function() {	
+		$(class1).hover(function() {
 			$(class1 + " .flipper-front").css('transform', 'rotateY(180deg)');
 			$(class1 + " .flipper-front").css('-webkit-transform', 'rotateY(180deg)');
 			$(class1 + " .flipper-front").css('opacity', '0');
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		}, function() {
 			$(class1 + " .flipper-back").css('opacity', '0');
 		});
-	};
+	}
 
 	function resizeCourse(){
 		var windowWidth = null;
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 			if (windowWidth > 800) {
 				$(".courses .items").animate({width: 800}, 100);
-			};
+			}
 
 			if(windowWidth < 800 && windowWidth > 600){
 				$(".courses .items").animate({width: 600}, 100);
@@ -55,7 +55,7 @@ $(document).ready(function() {
 				$(".courses .items").animate({width: 200}, 100);
 			}
 		});
-	};
+	}
 
 	function loginSignup(){
 		$("#register").click(function(event) {
@@ -79,7 +79,7 @@ $(document).ready(function() {
 			$(".navbar").css('width', '100px');
 			$(".navbar-login").css('width', '0px');
 		});
-	};
+	}
 
 	$(window).scroll(function(event) {
 		viewPortChecker('#about', '#about #item1','animated fadeInLeft');
@@ -92,18 +92,18 @@ $(document).ready(function() {
 		var elemPosition = _POSITION.top - 400;
 
 		var scroll = $(window).scrollTop();
-	    
+
 	    if (scroll > elemPosition) {
 	      	$(elem2).addClass(cls);
 	    }
-	};
+	}
 
 
-	/*-----------------------------------------------------------------------------------------------------*/	
+	/*-----------------------------------------------------------------------------------------------------*/
 	var hashTagActive = "";
-	
+
 	$(".scroll").click(function (event) {
-	
+
 			event.preventDefault();
 			//calculate destination place
 			var dest = 0;
