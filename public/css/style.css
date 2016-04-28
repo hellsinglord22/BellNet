@@ -40,32 +40,31 @@ html,body{
 	width: 100%;
 	height: 100%;
 	z-index: 999999;
-	background: url(../imgs/load.gif) 50% 50% no-repeat rgb(249,249,249);
 	background-size: 45%;
 
 }
 
 /* ************************************************** SCROLL-BAR */
-::-webkit-scrollbar { 
-	width: 2px; 
+::-webkit-scrollbar {
+	width: 2px;
 	height: 0px;
 }
 
-::-webkit-scrollbar-button {  
+::-webkit-scrollbar-button {
 	background-color: #d8d8d8;
 	width: 5px;
 	display: none;
 }
 
-::-webkit-scrollbar-track {  
+::-webkit-scrollbar-track {
 	background-color: #d8d8d8;
 }
 
-::-webkit-scrollbar-track-piece{ 
+::-webkit-scrollbar-track-piece{
 	background-color: #d8d8d8;
 }
 
-::-webkit-scrollbar-thumb { 
+::-webkit-scrollbar-thumb {
 	background-color: #bd1622;
     border-radius: 20px;
 }
@@ -250,7 +249,7 @@ html,body{
 }
 
 .header ul #image:hover{
-	border-bottom: none !important; 
+	border-bottom: none !important;
 }
 
 .header p{
@@ -874,7 +873,7 @@ html,body{
 	width:100px;
 	padding-bottom: 5px;
 	font-family: RobotoL;
-	
+
 }
 
 .header2 ul img{
@@ -886,7 +885,7 @@ html,body{
 }
 
 .header2 ul #image:hover{
-	border-bottom: none !important; 
+	border-bottom: none !important;
 }
 
 .header2 input[type="text"]{
@@ -981,7 +980,7 @@ html,body{
 }
 
 .instructor-option p{
-    padding-left: 3px;	
+    padding-left: 3px;
 	font-size:2em;
 	color:#333;
 	font-family: RobotoB;
@@ -997,7 +996,7 @@ html,body{
 	list-style:none;
 	text-decoration:none;
 	color:#333;
-	
+
 }
 
 .instructor-option ul li{
@@ -1107,7 +1106,7 @@ html,body{
     width: 34%;
     cursor: pointer;
     color: #fff;
-	
+
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -1169,7 +1168,7 @@ html,body{
 }
 .footer2 .leftpart .s2{
 	color:#fff;
-	
+
 	font-size: 1.3em;
 }
 .footer2 .leftpart .s2:hover{
@@ -1214,7 +1213,7 @@ html,body{
 
 .footer2 hr{
 	border: 1px solid rgba(106, 107, 107, 0.16);
-	width: 96%;	
+	width: 96%;
 }
 
 .footer2 p{
@@ -1291,7 +1290,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 	text-decoration: none;
 	float:right;
 	cursor: pointer;
-	
+
 
 	transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -1307,7 +1306,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-	text-decoration: none;		
+	text-decoration: none;
 }
 
 /* ******************************************** create-test page */
@@ -1354,7 +1353,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 	float:right;
 	cursor: pointer;
 	margin-left: 5px;
-	
+
 
 	transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -1370,7 +1369,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
 	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-	text-decoration: none;		
+	text-decoration: none;
 }
 
 /* ************************************************* schedule page */
@@ -1379,7 +1378,7 @@ tr:nth-child(even){background-color: #f2f2f2}
     width: 70%;
 	text-align: center;
 	margin-top: 7px;
-	float: right;	
+	float: right;
 
 }
 th, td {
@@ -1406,7 +1405,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 	width: 100%;
 	height: 100%;
-	
+
 	background-image: url(../imgs/bg_header.png);
 	background-color: #262f38;
 }
@@ -1424,7 +1423,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 
 .loginadmin ul #image:hover{
-	border-bottom: none !important; 
+	border-bottom: none !important;
 }
 .loginadmin ul img{
 width: 100px;
@@ -1434,7 +1433,7 @@ text-align: center;
 .adminloginform{
 
 	text-align: center;
-	padding-left: 33% 
+	padding-left: 33%
 }
 .loginadmin .adminloginform table {
 	width: 50%;
@@ -1450,8 +1449,8 @@ color: #ffffff;
 .loginadmin .adminloginform input[type=button]{
 
 	border-radius: 8px;
-	background-color: #595959; 
-    color: white; 
+	background-color: #595959;
+    color: white;
     border: 2px solid #f44336;
 }
 
@@ -1469,7 +1468,7 @@ color: #ffffff;
 	color:#ef2a15;
 }
 	text-align: center;
-	padding-left: 33% 
+	padding-left: 33%
 }
 .loginadmin .adminloginform table {
 	width: 50%;
