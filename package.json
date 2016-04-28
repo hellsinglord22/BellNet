@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/hellsinglord22/BellNet/issues"
   },
-  "homepage": "https://github.com/hellsinglord22/BellNet#readme"
+  "homepage": "https://github.com/hellsinglord22/BellNet#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
