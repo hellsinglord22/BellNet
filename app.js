@@ -17,8 +17,13 @@ app.use(express.static('public'));
 
 
 /// web socket
-io.on('connection', function(clientSocket){
-    clientSocket.emit('message', 'welcome to virtual class room'); 
+io.on('connection', function(socket){
+
+    socket.on('chat', function(message){
+        socket.broadcast.emit('message', message); 
+    });
+
+    socket.emit('message', 'welcome to virtual class room');
 });
 
 
