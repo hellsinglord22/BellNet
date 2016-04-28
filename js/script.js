@@ -11,6 +11,10 @@ $(document).ready(function() {
 	resizeCourse();
 	loginSignup();
 
+	$(window).load(function() {
+		$("#open").fadeOut(1000);
+	});
+
 	function itemHover(class1){
 
 		$(class1).hover(function() {	
@@ -60,19 +64,20 @@ $(document).ready(function() {
 		});
 
 		$(".navbar-register button").click(function(event) {
-			$(".navbar").animate({width: 100}, 100);
-			$(".navbar-register").animate({width: 0}, 300);
+			$(".navbar").css('width', '100px');
+			$(".navbar-register").css('width', '0px');
 		});
 
 
 		$("#login").click(function(event) {
 			$(".navbar").css('width', '300px');
 			$(".navbar-login").css('width', '300px');
+			//$(".login-area").css('width', '200px');  //delete this line and handle with PHP
 		});
 
 		$(".navbar-login button").click(function(event) {
-			$(".navbar").animate({width: 100}, 100);
-			$(".navbar-login").animate({width: 0}, 300);
+			$(".navbar").css('width', '100px');
+			$(".navbar-login").css('width', '0px');
 		});
 	};
 

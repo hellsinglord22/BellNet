@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bellnet | Virtual Classroom</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="shortcut icon" href="icon.ico">
+
+		<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
+		<link rel="stylesheet" href="icomoon/style.css">
+		<link rel="stylesheet" href="css/1140.css">
+		<link rel="stylesheet" href="css/virtual-style.css">
+
+	</head>
+	<body>
+
+		<div id="open"></div>
+		
+		<section class="left-side">
+
+			<div class="holder">
+				<div class="top-area">
+					<div class="menu">
+						<img title="Bellnet" src="imgs/logo.png" alt="" class="logo">
+						<div class="items">
+
+							<div class="item">
+								<img title="full screen" src="imgs/fullscreen.png" alt="">
+							</div>&nbsp; &nbsp;
+
+							<div class="item">
+								<img title="Setting" src="imgs/setting.png" alt="">
+							</div>&nbsp; &nbsp;
+
+							<div class="item">
+								<img title="Undo" src="imgs/undo.png" alt="">
+							</div>
+
+							<div class="item">
+								<img title="Redo" src="imgs/redo.png" alt="">
+							</div>&nbsp; &nbsp; &nbsp; &nbsp;
+
+							<div class="item">
+								<img title="Gallery" src="imgs/imgicon.png" alt="">
+							</div>&nbsp; &nbsp; 
+
+							<div class="item">
+								<input type="color" id="colorpicker" />
+							</div>
+
+							<div class="item">
+								<img title=" Pen Color" src="imgs/pencil.png" alt="">
+							</div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+
+							<div class="item" id="button1">
+								<img title="Open Presentation" src="imgs/presentation.png" alt="">
+							</div>
+
+							<div class="item">
+								<img title="Share File" src="imgs/share.png" alt="">
+							</div>
+
+							<div class="item">
+								<img title="media" src="imgs/media.png" alt="">
+							</div>
+
+							<div class="item">
+								<img title="breakroom" src="imgs/breakroom.png" alt="">
+							</div>
+
+							
+
+						</div>
+					</div>
+				</div>
+
+				<div class="left-area">
+					<div class="items">
+
+							<div class="item" id= "moveTool">
+								<img title="Move Tool" src="imgs/cursor.png" alt="">
+							</div>
+
+							<div class="item">
+								<img title="Select Tool" src="imgs/arrow.png" alt="">
+							</div>
+
+							<div class="item" id="eraserTool">
+								<img title="Eraser Tool" src="imgs/eraser.png" alt="">
+							</div>
+
+							<div class="item " id="shape">
+								<img src="imgs/shapes.png" alt="">
+							</div>
+							<div class="shapes" id="shapes" onclick="showmenu()">
+								<ul>
+									<li><img src="imgs/rectangle.png" alt=""></li>
+									<li><img src="imgs/triangle.png" alt=""></li>
+									<li><img src="imgs/circle.png" alt=""></li>
+									<li><img src="imgs/line.png" alt=""></li>
+									<li><img src="imgs/a.png" alt=""></li>
+									<li><img src="imgs/c.png" alt=""></li>
+									<li><img src="imgs/polygon.png" alt=""></li>
+									<li><img src="imgs/b.png" alt=""></li>
+									<li><img src="imgs/d.png" alt=""></li>
+									<li><img src="imgs/threed-triangle.png" alt=""></li>
+									<li><img src="imgs/slinder.png" alt=""></li>
+									<li><img src="imgs/threed-rectangle.png" alt=""></li>
+									<li><img src="imgs/l-arrow.png" alt=""></li>
+									<li><img src="imgs/u-arrow.png" alt=""></li>
+									<li><img src="imgs/d-arrow.png" alt=""></li>
+									<li><img src="imgs/r-arrow.png" alt=""></li>
+								</ul>
+							</div>
+
+							<div class="item" id="brushTool">
+								<img title="Brush Tool" src="imgs/brush.png" alt="">
+							</div>
+
+							<div class="item" id="penTool">
+								<img title=" pen Tool" src="imgs/grid.png" alt="">
+							</div>
+
+							<div class="item" id="typeTool">
+								<img title="Type Tool" src="imgs/typetool.png" alt="">
+							</div>
+
+							<div class="item" id="highlighterTool">
+								<img title="Highlighter Tool" src="imgs/highlighter.png" alt="">
+							</div> 
+
+							<div class="item">
+								<img title="wolframe Tool" src="imgs/wolframe.png" alt="">
+							</div>
+
+							<div class="item" id="clearallTool">
+								<img title=" Clearall Tool" src="imgs/clearall.png" alt="">
+							</div>
+
+							<div class="item">
+								<img title="Logout" src="imgs/logout.png" alt="">
+							</div>
+
+						</div>
+				</div>
+
+				<div class="middle-area">
+					<div class="top-part">
+						<span>
+							<button class="midtopbtn">Title for the Window</button>
+							<button class="midtopbtn2">+</button>
+						</span>
+
+						<button class="midtopbtn3">x</button>
+					</div>
+					<div class="board">
+						<canvas class="board" id="whiteBoard" width="970" height="500">
+					</canvas>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="right-side">
+			<div class="part1">
+				<span>
+					<img src="black/signal22.png" alt="">
+					<span class="icon-user"></span>
+					<span>User</span>
+						<button><span title="voice call" class="icon-microphone"></span></button>
+						<button><span title="video call" class="icon-camera2"></span></button>
+						<button><span title="Screenshot" class=" icon-screen3"></span></button>
+				</span>
+			</div>
+
+			<div class="part2">
+				<span>
+					<span class="title">Videos</span>
+					<button id="min2"><span><img src="imgs/minimize.png" alt=""></span></button>
+					<button><span title="Record" class="icon-record"></span></button>
+					<button><span title="fullscreen" class=" icon-screen3"></span></button>
+				</span><br><br>
+				<div class="cameras">
+						
+				</div>
+				<p class="name">Classroom</p>
+			</div>
+
+			<div class="part3">
+				<span>
+					<span class="title">Attendee List(1)</span>
+					
+						<button id="min3"><span><img src="imgs/minimize.png" alt=""></span></button>
+						<button><span title="Check attendance" class="icon-users"></span></button>
+					
+				</span><br><br>
+				<div class="attend">
+					<span class="item">
+						<span class="icon-user52"></span>
+						<span>Hazem Hamdy</span> 
+						<button><span title="voice call" class="icon-microphone"></span></button>
+						<button><span title="video call" class="icon-camera2"></span></button>
+						<button><span title="Screenshot" class="icon-pencil2"></span></button>
+					</span><br>
+
+					<span class="item">
+						<span class="icon-user52"></span>
+						<span>Hazem Hamdy</span> 
+						<button><span title="voice call" class="icon-microphone"></span></button>
+						<button><span title="video call" class="icon-camera2"></span></button>
+						<button><span title="Screenshot" class="icon-pencil2"></span></button>
+					</span><br>
+
+					<span class="item">
+						<span class="icon-user52"></span>
+						<span>Hazem Hamdy</span> 
+						<button><span title="voice call" class="icon-microphone"></span></button>
+						<button><span title="video call" class="icon-camera2"></span></button>
+						<button><span title="Screenshot" class="icon-pencil2"></span></button>
+					</span>
+
+				</div>
+			</div>
+
+			<div class="part4">
+				<span>
+					<span class="title">Chat</span>
+					
+						<button id="min4"><span><img src="imgs/minimize.png" alt=""></span></button>
+					
+					</span><br><br>
+				
+				<form action="">
+				<div class="chat">
+				</div>
+					<span><input type="text" name="lname" placeholder="  Text......"></span><span><button id="send">Send</button></span>
+				</form>
+		
+			</div>
+		</section>
+
+		<script type="text/javascript" src="bower_components/fabric.js/dist/fabric.min.js"></script>
+		<script type="text/javascript" src="bower_components/fabric-brush/dist/fabric-brush.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/virtual-script.js"></script>
+		
+	</body>
+</html>
