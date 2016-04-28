@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/hellsinglord22/BellNet#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "socket.io": "^1.4.5"
   }
 }
