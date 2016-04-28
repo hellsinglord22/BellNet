@@ -1,0 +1,25 @@
+{
+  "name": "bellnet",
+  "version": "1.0.0",
+  "description": "a virtual class room",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellsinglord22/BellNet.git"
+  },
+  "keywords": [
+    "virtual",
+    "classroom",
+    "chat",
+    "sharescreen"
+  ],
+  "author": "H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellsinglord22/BellNet/issues"
+  },
+  "homepage": "https://github.com/hellsinglord22/BellNet#readme"
+}
